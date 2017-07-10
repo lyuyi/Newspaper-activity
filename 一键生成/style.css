@@ -1,0 +1,321 @@
+@font-face {
+    font-family: Fest;
+    src: url('font/站酷快乐体.ttf');
+}
+body{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: Fest;
+	color: #1b1e6a;
+	/*font-weight: bold;*/
+	letter-spacing: 1px;
+	background-image: url('img/一键生成页面背景.png');
+}
+.container{
+	width: 360px;
+	height: 568px;
+	position: absolute;
+	left: 50%;
+	margin-left: -180px;
+	margin-right: -284px;	
+}
+.head{
+	height: 67px;
+	width: 100%;
+	line-height: 67px;
+	margin-top: 21px;
+}
+.head div{
+	float: left;
+}
+.head img{
+	width: 64px;
+	height: 9px;
+	padding-left: 21px;
+	padding-right: 21px;
+}
+.head p{
+	font-size: 20px;
+	line-height: 25px;
+}
+.form{
+	position: relative;
+	margin-top: 35px;
+	margin-left: 12px;
+	text-align: left;
+} 
+.form input{
+	margin-bottom: 13px;
+	height: 30px;
+	width: 226px;
+	border-radius: 7px;
+	border:1px solid #1b1e6a;
+	background-color:transparent;
+	outline: none;
+	padding-left: 17px;
+	color: #1b1e6a;
+}
+.form .jiant{
+	position: absolute;
+	left: 315px;
+	padding-top: 10px;
+	width: 7px;
+}
+
+input::-webkit-input-placeholder{
+    color: #1b1e6a;
+}
+input:-moz-placeholder { 
+　　color:#1b1e6a;
+}
+input::-moz-placeholder { 
+　　color:#1b1e6a;
+}
+input:-ms-input-placeholder { 
+　　color:#1b1e6a;
+}
+.form span{
+	color: red;
+}
+#open,#sub-open{
+	background-color: #fff;
+	width: 266px;
+	height: 183px;
+	z-index: 2000;
+	position: absolute;
+	margin-left: 32px;
+	display: none;
+	text-align: left;
+}
+.lis{
+	margin-left: 0px;
+	cursor: pointer;
+}
+ul{
+	list-style: none;
+	position: relative;
+	left: -18px;
+}
+ul li{
+	height: 30px;
+	width: 100%;
+	text-align: left;
+	border-bottom: 1px solid #eee;
+}
+#close,#closes,#thir-close{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 1000;
+	margin: 0;
+	padding: 0;
+	left: 0;top: 0;
+	display: none;
+}
+.lis img{
+	position: absolute;
+	width: 12px;	
+	height: 12px;
+	right: 5px;
+	margin-top: 10px;
+}
+.list,.sub-list{
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	line-height: 36px;
+	color: black;
+	font-family: PingFangSC-Regular;
+}
+a:active{
+	color: blue;
+}
+#sub-open{
+	position: absolute;
+	height: 500px;
+	top: -100px;
+	/*background-color: #000;*/
+}
+#sub-open .lis{
+	height: 36px;
+}
+.ch-pic #thir-name{
+	border-color: transparent;
+	width: 226px;
+	height: 115px;
+	z-index: 3000;
+	background: url('img/会议图片.png') no-repeat center center;
+}
+.ch-pic .lis input{
+	border-color: transparent;
+}
+.ch-pic{
+	position: relative;
+	height: 148px;	
+}
+.ch-pic span{
+	color: #1b1e6a;
+	position: relative;
+	top: -60px;	
+}
+.ch-pic #btn{
+	cursor: pointer;
+	color: black;
+	text-align: left;
+}
+.ch-pic #choose{
+	width: 360px;
+	height: 214px;
+	background-color: #fff;
+	position: absolute;
+	left: -12px;
+	top: 142px;
+	z-index: 2000;
+	display: none;
+}
+.ch-pic #choose .p-choose{
+	font-family: SourceHanSansCN-Medium;
+	font-size: 18px;
+	color: #000000;
+	text-align: center;
+	padding-top: 17px;
+	font-weight: bold;
+}
+.pic-2{
+	padding-top: 16px;
+	width: 159px;
+	height: 55px;
+	padding-bottom: 28px;
+	/*background-color: blue;*/
+}
+.pic-2 a{
+	text-decoration: none;
+	width: 50%;
+	height: 80%;
+	float: left;
+	vertical-align: middle;	
+}
+.pic-2 a p{
+	position: absolute;
+	margin-left: 8px;
+	margin-top: 5px;
+	font-size: 12px;
+	color: #000;
+	font-family: SourceHanSansCN-Medium;
+}
+#thir-open{
+	position: relative;
+	width: 266px;
+	height: 148px;
+	top: -230px;
+	left: 46px;
+	display: none;
+	background-color: #fff;
+	z-index: 1999;
+}
+#list{
+	font-family: SourceHanSansCN-Medium;
+}
+#list li{
+	height: 48px;
+	text-align: left;
+	line-height: 48px;
+	color: black;
+}
+#list h3{
+	font-size: 18px;
+	color: #1b1e6a;
+}
+.last span{
+	color: #9C9B9B;
+	font-family: SourceHanSansCN-Medium;
+	left: 86px;
+	top: -10px;
+	font-size: 12px;
+	position: relative;
+}
+.finish{
+	position: relative;
+	top: 50px;
+}
+.finish input{
+	width: 180px;
+}
+#completion{
+	position: absolute;
+	width: 282px;
+	height: 368px;
+	margin-left: 39px;
+	margin-top: -140%;
+	border-radius: 7px;
+	background-color: #fff;
+	display: none;
+	z-index: 2000;
+}
+#completion .content{
+	padding: 40px 40px 16px 40px;
+
+}
+.content img{
+	width: 100px;
+	height: 101px;
+}
+.content p{
+	font-family: SourceHanSansCN-Normal;
+	font-size: 13px;
+	color: #1B1E68;
+	line-height: 18px;
+}
+.content h2{
+	font-family: Fest;
+	font-size: 24px;
+	color: #1B1E68;
+	letter-spacing: -0.15px;
+}
+.xiang{
+	width: 142px;
+	height: 40px;
+	padding-top: 12px;
+}
+.f-close{
+	width: 21px;
+	height: 21px;
+	border-radius: 50%;
+	background-color: #fff;
+	position: absolute;
+	right: 0;
+	top: -30px;
+	font-size: 15px;
+	text-align: center;
+	font-family: SourceHanSansCN-Normal;
+}
+.f-close .xian{
+	width: 1px;
+	height: 15px;
+	right: 10px;
+	top: 18px;
+	position: absolute;
+	background-color: #fff;
+}
+.f-close a{
+	text-decoration: none;
+	color: #ccc;
+}
+#xiang{
+	outline: none;
+}
+
+/* 半透明的遮罩层 */
+#mask{
+	background-color:#000;
+	opacity:0.7;
+	filter: alpha(opacity=70); 
+	position:absolute; 
+	left:0;
+	top:0;
+	z-index:900;
+	width: 100%;
+	height: 100%;
+	display: none;
+}

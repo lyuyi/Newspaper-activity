@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- 设置初始缩放比例为1.0，使用设备宽度  -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <!-- 在iOS下开启全屏模式  -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 隐藏 Sarafi 状态栏  -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>一键生成</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="jquery.js" type="text/javascript"></script>
+	 
+
+</head>
+<body>
+	<div id="mask"></div>
+	<div class="container">
+		<div class="head">
+			<div><img src="img/一键生成-装饰.png"></div>
+			<div><p>好玩的头条报纸</p></div>
+			<div><img src="img/一键生成-装饰.png"></div>
+		</div>
+		<div class="form">
+			您的大名<span>*</span>
+			<input type="text" placeholder="罗梦林"><br>
+			您的职称<span>*</span>
+			<input type="text" placeholder="教授" id="job">
+			<img src="img/箭头.png" class="jiant">
+			<div id="open">
+				<ul id="list-img">
+					<li class="lis"><a class="list">教授</a><img src="img/图标未选中-图标.png" alt="" name="user" value="1" id="lis-img"></li>
+					<li class="lis"><a class="list">副教授</a><img src="img/图标未选中-图标.png" alt="" name="user" value="2" id="lis-img"></li>
+					<li class="lis"><a class="list">助理教授</a><img src="img/图标未选中-图标.png" alt="" name="user" value="3" id="lis-img"></li>
+					<li class="lis"><a class="list">讲师</a><img src="img/图标未选中-图标.png" alt="" name="user" value="4" id="lis-img"></li>
+					<li class="lis"><a class="list">助教</a><img src="img/图标未选中-图标.png" alt="" name="user" value="5" id="lis-img"></li>
+				</ul>
+			</div>
+			<div id="close"></div>
+			 <br>
+			您的单位<span>*</span>
+			 <input type="text" placeholder="湖南工业大学"><br>
+			您的专业&nbsp;
+			 <input type="text" placeholder="请选择" id="sub-name">
+			 <img src="img/箭头.png" class="jiant">
+			<div id="sub-open">
+				<ul id="list-img">
+					<li class="lis"><a class="sub-list">经济学</a><img src="img/图标未选中-图标.png" alt="" name="user" value="1" id="lis-img"></li>
+					<li class="lis"><a class="sub-list">哲学</a><img src="img/图标未选中-图标.png" alt="" name="user" value="2" id="lis-img"></li>
+					<li class="lis"><a class="sub-list">法学</a><img src="img/图标未选中-图标.png" alt="" name="user" value="3" id="lis-img"></li>
+					<li class="lis"><a class="sub-list">教育学</a><img src="img/图标未选中-图标.png" alt="" name="user" value="4" id="lis-img"></li>
+					<li class="lis"><a class="sub-list">文学</a><img src="img/图标未选中-图标.png" alt="" name="user" value="5" id="lis-img"></li>
+					<li class="lis"><a class="sub-list">工学</a><img src="img/图标未选中-图标.png" alt="" name="user" value="1" id="lis-img"></li>
+					<li class="lis"><a class="sub-list">历史学</a><img src="img/图标未选中-图标.png" alt="" name="user" value="2" id="lis-img"></li>
+					<li class="lis"><a class="sub-list">理学</a><img src="img/图标未选中-图标.png" alt="" name="user" value="3" id="lis-img"></li>
+					<li class="lis"><a class="sub-list">农学</a><img src="img/图标未选中-图标.png" alt="" name="user" value="4" id="lis-img"></li>
+					<li class="lis"><a class="sub-list">医学</a><img src="img/图标未选中-图标.png" alt="" name="user" value="5" id="lis-img"></li>
+					<li class="lis"><a class="sub-list">军事学</a><img src="img/图标未选中-图标.png" alt="" name="user" value="3" id="lis-img"></li>
+					<li class="lis"><a class="sub-list">管理学</a><img src="img/图标未选中-图标.png" alt="" name="user" value="4" id="lis-img"></li>
+					<li class="lis"><a class="sub-list">艺术学</a><img src="img/图标未选中-图标.png" alt="" name="user" value="5" id="lis-img"></li>
+				</ul>
+			</div>
+			<div id="closes"></div>
+			 <br>
+			<div class="ch-pic">
+				<span>上传图片</span>&nbsp;
+				<input type="image" src="img/点此替换图片-图标.png" value="点此替换图片" id="thir-name">
+				<div id="thir-open">
+					<ul id="list">
+						<li class="lis"><h3 class="th-list">替换默认图片</h3></li>
+						<li class="lis"><input id="takepicture" type="file" accept="image/*" capture="camera" ></li>
+						<li class="lis"><input type="button" value="从手机相册选择" id="btn"></li>
+					</ul>
+					
+				</div><!-- close为透明背景层，为了点击open以外地方open关闭。 -->
+				<div id="thir-close"></div>
+				<div id="choose">
+						<p class="p-choose">选择打开方式</p>
+						<div class="pic-2">
+							<a href="" id="tk"><img src="img/图库.png"><p>图库</p></a>
+							<a href="" id="wj"><img src="img/文件.png"><p>文件选择</p></a>
+						</div>
+					</div>
+				<br>
+			</div>
+			<div class="last">
+				同事姓名&nbsp;
+				<input type="text" placeholder="都教授">
+				<span>您可以恶搞一位同事，请输入同事姓名</span>
+			</div>
+		</div>
+		<div class="finish">
+			<input type="image" src="img/一键生成页面图标.png" value="一键生成页面图标" id="f-name">
+			<div id="completion">
+				<div class="f-close">
+					<a href="">x</a>
+					<div class="xian"></div>
+				</div>
+				<div class="content">
+					<img src="img/资料不全图标.png">
+					<h2>资料不全</h2>
+					<p>由于您的数据不全，导致此功能无法使用，请了解详情补全资料</p>
+				</div>
+				<input type="image" src="img/了解详情.png" value="了解详情" id="xiang">
+				
+			</div>	
+		</div>		
+	</div>
+	<script src="javascript.js" type="text/javascript"></script>
+</body>
+</html>
